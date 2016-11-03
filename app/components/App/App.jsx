@@ -1,9 +1,8 @@
 import React from 'react';
+import Countdown from 'components/Countdown';
 
 export default class App extends React.Component {
   render() {
-    return (
-      <div>Hello World!</div>
-    )
+    return <Countdown/>
   }
 }
