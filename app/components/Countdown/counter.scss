@@ -6,11 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./images/house.jpg') center center no-repeat;
+  background: url('./images/h1.jpg') center no-repeat;
   background-size: cover;
   .timerContainer {
     border-radius: 6px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
       font-family: 'Open Sans', sans-serif;
       font-size: 35px;
       color: #FFF;
-      font-weight: 300;
+      font-weight: 100;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
   .timer {
     font-size: 22px !important;
   }
