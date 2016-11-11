@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './countdown.scss';
 
-export default class Counterdown extends React.Component {
+export default class Countdown extends React.Component {
   constructor() {
     super();
     this.goal  = '2016-12-20 9:00';
