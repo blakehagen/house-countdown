@@ -1,1 +1,1 @@
-export {default} from './Counter.jsx';
+export {default} from './Countdown.jsx';

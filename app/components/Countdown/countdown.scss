@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+.container {
+  height: 100vh;
+  min-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./images/h2.jpg') center no-repeat;
+  background-size: cover;
+
+  .timerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .timeBox {
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid #FFF;
+      border-radius: 6px;
+      margin: 14px;
+      padding: 10px;
+      min-width: 105px;
+      display: flex;
+      flex-direction: column;
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        color: #FFFFFF;
+        cursor: default;
+      }
+      .timeUnit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 44px;
+        }
+      }
+      .timeDescription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .timerContainer {
+    flex-direction: column !important;
+  }
+}
