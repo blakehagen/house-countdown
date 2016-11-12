@@ -5,12 +5,8 @@ import styles from './countdown.scss';
 export default class Countdown extends React.Component {
   constructor() {
     super();
-    this.goal  = '2016-12-20 9:00';
+    this.goal  = '2016-12-20 09:00';
     this.state = this.getTimeRemaining();
-    // console.log('Date.parse(new Date()', Date.parse(new Date()));
-    // console.log((moment().unix())*1000);
-    // console.log('Date.parse(this.goal)', Date.parse(this.goal));
-    // console.log((moment('2016-12-20 09:00:00').unix())*1000);
   }
 
   componentDidMount() {
@@ -66,7 +62,7 @@ export default class Countdown extends React.Component {
   }
 
   getTimeRemaining() {
-    let t       = (moment(this.goal).unix()) * 1000 - (moment().unix()) * 1000;
+    let t       = (moment(this.goal).unix()) * 1000 - (moment().utcOffset('-0700').unix()) * 1000;
     let seconds = Math.floor((t / 1000) % 60);
     let minutes = Math.floor((t / 1000 / 60) % 60);
     let hours   = Math.floor((t / (1000 * 60 * 60)) % 24);
