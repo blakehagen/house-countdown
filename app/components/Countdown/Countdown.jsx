@@ -5,7 +5,7 @@ import styles from './countdown.scss';
 export default class Countdown extends React.Component {
   constructor() {
     super();
-    this.goal  = '2016-12-20 00:00';
+    this.goal  = '2016-12-22 09:00';
     this.state = this.getTimeRemaining();
   }
 
